@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Aeonik";
+    src: url("/fuentes/Aeonik\ Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Aeonik",Helvetica, Arial, sans-serif;
+}
+
+body{
+    width: 99.1vw;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f6f7;
+}
+nav{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.ContenedorLogo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre{
+    font-family: "Aeonik",Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.Anclas{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+   
+}
+.ancla-header{
+    text-decoration: none;
+    background-color: transparent;
+    color: #868686;
+}
+
+.Logo
+{
+    width: 100px;
+    height: 100px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carrusel {
+    width: 100%;
+    overflow: hidden; 
+    position: relative; 
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; 
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+.carousel-item img{
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    background-size: cover;
+    filter: brightness(0.6);
+    
+} 
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+  }
+
+.carousel-caption h3 {
+    margin-right: 550px; 
+    text-align: left;
+  }
+
+  .tituloCiudad {
+    color: #ffffff;
+    font-size: 60px; 
+    font-weight: bold;
+  }
+
+.Planes{
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tituloPlan{
+
+    margin-top: 2%;
+}
+
+.cards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.cards a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.plan{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20PX;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.plan img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+
+.plan p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: background 0.5s ease;
+  }
+
+.plan:hover .text{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:#868686 ;
+}
+
+.info-contacto{
+    width: 50%;
+    margin: 1%;
+}
+
+
+
+.info{
+    font-size: 20px;
+    font-family: "Aeonik",Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.redes{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 1.5rem;
+}
+
+.fa-brands{
+    cursor: pointer;
+}
