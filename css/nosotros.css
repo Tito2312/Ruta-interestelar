@@ -94,6 +94,11 @@ ul{
     cursor: pointer;
 }
 
+.usuario i{
+    font-size: 25px ;
+    color: #000;
+}
+
 .modal {
     display: none;
     position: absolute;
@@ -144,7 +149,7 @@ main{
 
 }
 
-.info{
+.infoN{
     width: 70%;
     height: 100%;
     text-decoration: none;
@@ -183,12 +188,11 @@ main{
 
 footer{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#f7ba14 ;
 }
 
 .contactos{
@@ -199,29 +203,54 @@ footer{
 }
 
 .info-contacto{
-    width: 70%;
+    width: 90%;
     margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-contacto h3{
-    font-size: 20px;
+    font-size: 20px; 
     margin-right: 40rem
 }
 
 .info{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactanos{
+    color: #868686;
+}
+
+.fa-solid{
+    color: #868686;
+    font-size: 16px;
+}
+
+.tituloInfo{
+    font-size: 18px;
+    color: #868686;
+}
+
+.textoInfo{
+    font-size: 18px;
+    color: #f7ba14;
 }
 
 .redes{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-size: 30px;
     gap: 1.5rem;
-    margin: 1rem 1.5rem 1rem 1.1rem;
+    margin: 1%;
 }
 
 .fa-brands{
@@ -229,8 +258,9 @@ footer{
     color: #868686;
 }
 
+
 .mapa{
     width: 40%;
-    height: 70%;
+    height: 63%;
     margin-bottom: 5rem;
 }

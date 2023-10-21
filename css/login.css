@@ -24,7 +24,7 @@ body{
   
   h2 {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
     font-weight: bold;
   }
@@ -64,6 +64,7 @@ body{
   }
   
   input[type="submit"] {
+    width: 97%;
     background-color:#f7ba14;
     color: #fff;
     border: none;
