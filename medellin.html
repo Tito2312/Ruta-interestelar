@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/planes.css">
+    <link rel="stylesheet" href="css/planes.css">
     <script src="https://kit.fontawesome.com/f5ce703e18.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>ESENCIA DE CAFÉ</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="ContenedorLogo">
-                <img src="/imgs/Logo.png" alt="" class="Logo">
+                <img src="imgs/Logo.png" alt="" class="Logo">
                 <div class="nombre">ESENCIA DE CAFE</div>
             </div>
             <div class="Anclas">
                 <ul>
                     <a class="ancla-header" href="index.html">INICIO</a>
                     <a class="ancla-header" href="index.html#planes">PLANES</a>
-                    <a class="ancla-header" href="">RESERVA</a>
-                    <a class="ancla-header" href="">CONTACTENOS</a>
-                    <a class="ancla-header" href="">QUIENES SOMOS</a>
+                    <a class="ancla-header" href="reservar.html">RESERVA</a>
+                    <a class="ancla-header" href="nosotros.html">LA EMPRESA</a>
+                    <a class="ancla-header" href="#footer">CONTACTENOS</a>
                 </ul>
+            </div>
+            <div class="usuario">
+                <i class="fa-solid fa-user" id="openModal"></i>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <button id="loginBtn" class="btnLogin">Iniciar Sesión</button>
+                        <button id="registerBtn" class="btnLogin">Registrarse</button>
+                        <button id="updateBtn" class="btnLogin">Actualizar</button>
+                        <button id="deleteBtn" class="btnLogin">Borrar</button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -29,27 +43,29 @@
         <div class="infoP">
             <div class="infoPrincipal">
                 <div class="imgPrincipal">
-                    <img src="/imgs/medellin5.jpg" alt="">
+                    <img src="imgs/medellin5.jpg" alt="">
                 </div>
                 <div class="textoP">
                     <h2>MEDELLIN</h2>
-                    <P id="medellinTP">capital de la provincia montañosa de Antioquia, apodada la "Ciudad de la eterna primavera", sus espectaculares vistas panorámicas y sus espacios verdes convierten los recorridos por la ciudad en una experiencia que seduce.</P>
+                    <P id="medellinTP">Capital de la provincia montañosa de Antioquia, apodada la "Ciudad de la eterna primavera", sus espectaculares vistas panorámicas y sus espacios verdes convierten los recorridos por la ciudad en una experiencia que seduce.</P>
                 </div>
             </div>
         </div>
         <div class="Planes">
             <h2>Planes</h2>
+            <div class="linea"></div>
             <div class="plan">
                 <h3>Plan 1</h3>
                 <div class="infoPlan">
-                    <img src="/imgs/medellin4.jpg" alt="">
+                    <img src="imgs/medellin4.jpg" alt="">
                     <div class="textoPlan">
-                        <p>viaja en Octubre-Noviembre-Diciembre 1 día</p><br>
+                        <p>Viaja en Octubre-Noviembre-Diciembre 1 día</p><br>
                         <p>Incluye: Transporte ida y regreso - ingreso a la piedra el peñol - barco rumbero por la represa de Guatape - 1 desayuno - 1 almuerzo - mirador las letras (con bebida) -recorrido en metro y metrocable de Medellín - guía coordinador- asistencia médica.</p><br>
                         <p>Desde: Pereira- Armenia</p><br>
                         <p>Costo: 240.000</p>
                         <p>Reserva con el 50% del precio total</p><br>
                         <p>RESTRICCIONES: No cubre gastos no especificados en el plan.</p>
+                        <a href="reservar.html" class="btnR"><button>Reservar</button></a>
                     </div>
                 </div>
             </div>
@@ -57,33 +73,40 @@
                 <h3>Plan 2</h3>
                 <div class="infoPlan">
                     <div class="textoPlan">
-                        <p>viaja en Octubre-Noviembre-Diciembre 2 dias</p><br>
+                        <p>Viaja en Octubre-Noviembre-Diciembre 2 dias</p><br>
                         <p>Incluye: Transporte ida y regreso - 2 desayunos - 1 almuerzo - 1 cena - ingreso a la piedra el peñol - 1 noche de hotel acomodación múltiple (acomodación doble adicional) - vuelta en barco rumbero y metro cable - recorrido comuna 13 - recorrido pueblito paisa - guía coordinador- asistencia médica.</p><br>
                         <p>Desde: Pereira- Armenia</p><br>
                         <p>Costo: 420.000</p>
                         <p>Reserva con el 50% del precio total </p><br>
                         <p>RESTRICCIONES: No cubre gastos no especificados en el plan.</p>
+                        <a href="reservar.html" class="btnR"><button>Reservar</button></a>
                     </div>
-                    <img src="/imgs/medellin3.jpg" alt="">
+                    <img src="imgs/medellin3.jpg" alt="">
                 </div>
             </div>
         </div>
     </main>
     <hr>
-    <footer>
-        <div class="info-contacto">
-            <h3>CONTACTANOS</h3>
-            <h4 class="info">Horarios de atención: 9 am-12:30 pm, 2pm-5:30pm</h4>
-            <h4 class="info">Ubicación:Centro Comercial Unicentro, Armenia, Quindio</h4>
-            <h4 class="info">Teléfonos de contacto: 3053362933 - 3053168099</h4>
-            <h4 class="info">Gmail: esenciadecafe2023@gmail.com</h4>
+    <footer id="footer">
+        <div id="contactos">
+            <div class="info-contacto">
+                <h3>CONTACTANOS</h3>
+                <h4 class="info"> Horarios de atención: 9 am-12:30 pm, 2pm-5:30pm</h4>
+                <h4 class="info"><i class="fa-solid fa-house"></i> Ubicación:Centro Comercial Unicentro, Armenia, Quindio</h4>
+                <h4 class="info"><i class="fa-solid fa-phone"></i> Teléfonos de contacto: 3053362933 - 3053168099</h4>
+                <h4 class="info"><i class="fa-solid fa-envelope"></i> Gmail: esenciadecafe2023@gmail.com</h4>
+            </div>
+            <div class="redes">
+                <div><a href="https://twitter.com/esnciadecafe?t=ynCcZqoSgtADS_Ookl7NlQ&s=08"><i class="fa-brands fa-square-x-twitter"></i></a></div>
+                <div><a href="https://www.facebook.com/profile.php?id=61551260753609&mibextid=LQQJ4d"><i class="fa-brands fa-square-facebook"></i></a></div>
+                <div><a href="https://instagram.com/esncia_de_cafe?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-square-instagram"></i></a></div>
+                <div><a href="https://www.tiktok.com/@esenciadecafe0?_t=8fYQqyRcK2v&_r=1"><i class="fa-brands fa-tiktok"></i></a></div>
+            </div>
         </div>
-        <div class="redes">
-            <div><i class="fa-brands fa-square-x-twitter"></i></div>
-            <div><i class="fa-brands fa-square-facebook"></i></div>
-            <div><i class="fa-brands fa-square-instagram"></i></div>
-            <div><i class="fa-brands fa-tiktok"></i></div>
+        <div class="mapa">
+            <div id="mapa" style="height: 350px;"></div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

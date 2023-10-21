@@ -1,7 +1,10 @@
 @font-face {
     font-family: "Aeonik";
-    src: url("/fuentes/Aeonik\ Regular.ttf");
+    src: url("fuentes/Aeonik\ Regular.ttf");
 }
+html {
+    scroll-behavior: smooth;
+  }  
 
 *{
     margin: 0;
@@ -10,7 +13,7 @@
 }
 
 body{
-    width: 99.1vw;
+    width: 98.8vw;
     display: flex;
     flex-direction: column;
 }
@@ -46,13 +49,24 @@ nav{
 }
 
 .Anclas{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
+.usuario{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 ul{
     width: 80%;
     height: 100%;
@@ -65,14 +79,58 @@ ul{
 }
 .ancla-header{
     text-decoration: none;
-    background-color: transparent;
     color: #868686;
+    transition: color 0.3s;
+}
+
+.ancla-header:hover{
+    font-weight: bolder;
+    color: #f7ba14;
 }
 
 .Logo
 {
     width: 100px;
     height: 100px;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width:200px !important; /* Ancho de la modal */
+    margin-left: 1520px;
+    top: 90px !important;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btnLogin {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f7ba14;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
 main{
@@ -117,22 +175,80 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px; 
   }
 
-.carousel-caption h3 {
+
+.carousel-caption p{
+    font-size: 20px;
     margin-right: 550px; 
     text-align: left;
-  }
+}
 
   .tituloCiudad {
     color: #ffffff;
     font-size: 60px; 
-    font-weight: bold;
+    font-weight: bold; 
+    text-align: left;
   }
 
+#santaMTitulo{
+    margin-right: 1136px; 
+}
+
+#cartagenaTitulo{
+    margin-right: 1195px; 
+}
+
+#medellinTitulo{
+    margin-right: 1248px;
+}
+
+#sanAndresTitulo{
+    margin-right: 1153px; 
+}
+
+#bogotaTitulo{
+    margin-right: 1280px; 
+}
+
+#cafeteroTitulo{
+    margin-right: 1136px; 
+}
+
+#Promociones{
+    width: 150px;
+    height: 30px;
+    background-color: #31353e;
+    font-size: 20px;
+    margin-right: 1320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PromocionesT{
+    font-size: 60px;
+    font-weight: bold; 
+
+}
+
+.btnPromo{
+    width: 300px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f7ba14;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1510px; 
+}
+
 .Planes{
-    width: 60%;
+    width: 80%;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -140,12 +256,13 @@ main{
 }
 
 #tituloPlan{
-
     margin-top: 2%;
+    font-size: 50px;
+    font-family:'Yeseva One', cursive;
 }
 
 .cards{
-    width: 100%;
+    width: 80%;
     height: 80%;
     display: flex;
     gap: 2%;
@@ -212,32 +329,49 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#868686 ;
+    color:#f7ba14 ;
+}
+
+.contactos{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-contacto{
-    width: 50%;
+    width: 70%;
     margin: 1%;
 }
 
-
+.info-contacto h3{
+    font-size: 20px;
+    margin-right: 40rem
+}
 
 .info{
-    font-size: 20px;
-    font-family: "Aeonik",Helvetica, Arial, sans-serif;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .redes{
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     gap: 1.5rem;
+    margin: 1rem 1.5rem 1rem 1.1rem;
 }
 
 .fa-brands{
     cursor: pointer;
+    color: #868686;
+}
+
+.mapa{
+    width: 40%;
+    height: 80%;
+    margin-bottom: 5rem;
 }

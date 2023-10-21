@@ -2,6 +2,9 @@
     font-family: "Aeonik";
     src: url("/fuentes/Aeonik\ Regular.ttf");
 }
+html {
+    scroll-behavior: smooth;
+  }  
 
 *{
     margin: 0;
@@ -10,7 +13,7 @@
 }
 
 body{
-    width: 99.1vw;
+    width: 98.8vw;
     display: flex;
     flex-direction: column;
 }
@@ -40,6 +43,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 .nombre{
     font-family: "Aeonik",Helvetica, Arial, sans-serif;
     font-weight: bolder;
@@ -65,8 +69,13 @@ ul{
 }
 .ancla-header{
     text-decoration: none;
-    background-color: transparent;
     color: #868686;
+    transition: color 0.3s;
+}
+
+.ancla-header:hover{
+    font-weight: bolder;
+    color: #f7ba14;
 }
 
 .Logo
@@ -75,14 +84,153 @@ ul{
     height: 100px;
 }
 
-main{
-    width: 100%;
+.usuario{
+    width: 10%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width:200px !important; 
+    right: 0;
+    top: 90px !important;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btnLogin {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f7ba14;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+}
+
+main{
+    width: 100%;
+    /* height: 55vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .info{
     width: 70%;
-    
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    height: 20%;
+    margin-top: 50px;
+}
+
+.linea{
+    width: 100px;
+    height: 10px;
+    margin-top: 15px;
+    background-color: #f7ba14;
+}
+
+.parrafo{
+    margin-top: 20px ;
+    font-size: 18px;
+    font-weight: normal;
+    color: #a7a7a7;
+}
+
+.valores{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 18px;
+}
+
+/* //footer */
+
+footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:#f7ba14 ;
+}
+
+.contactos{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contacto{
+    width: 70%;
+    margin: 1%;
+}
+
+.info-contacto h3{
+    font-size: 20px;
+    margin-right: 40rem
+}
+
+.info{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.redes{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem 1rem 1.1rem;
+}
+
+.fa-brands{
+    cursor: pointer;
+    color: #868686;
+}
+
+.mapa{
+    width: 40%;
+    height: 70%;
+    margin-bottom: 5rem;
 }
