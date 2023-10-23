@@ -15,11 +15,22 @@ body{
   }
 
   .vueltaInicio{
+    width: 250px;
+    height: 40px;
+    background-color: #f7ba14;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .vueltaInicio:hover{
+    background-color: #0056b3;
   }
 
   .vueltaInicio a{
-    color: #f7ba14;
+    color: #000000;
     text-decoration: none;
   }
   

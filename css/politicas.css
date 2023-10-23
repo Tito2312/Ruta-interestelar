@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Aeonik";
-    src: url("fuentes/Aeonik\ Regular.ttf");
+    src: url("/fuentes/Aeonik\ Regular.ttf");
 }
 html {
     scroll-behavior: smooth;
@@ -48,6 +48,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 .nombre{
     font-family: "Aeonik",Helvetica, Arial, sans-serif;
     font-weight: bolder;
@@ -107,7 +108,7 @@ ul{
     display: none;
     position: absolute;
     width:200px !important; 
-    margin-left: 1335px;
+    right: 0;
     top: 90px !important;
     border-radius: 5px;
     text-align: center;
@@ -143,88 +144,56 @@ ul{
 
 }
 
-
 main{
     width: 100%;
-    height: 85vh;
-    background-color: rgb(43, 212, 66);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../imgs/maldives-1993704_1280.jpg");
-    background-size: cover;
-}
-
-.container{
-    width: 90%;
-    height: 90%;
-    background-color: rgba(255, 255, 255, 0.201);
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
-.infoPersonal{
+.infoN{
     width: 70%;
-    height: 40%;
+    height: 100%;
+    text-decoration: none;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.infoPersonal input{
-    width: 205px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
+.titulo{
+    height: 20%;
+    margin-top: 50px;
 }
 
-#correo{
-    margin-top: 31px;
-}
-
-.btnEnviar{
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btnEnviar button{
-    width: 150px;
-    height: 50px;
-    border: none;
+.linea{
+    width: 100px;
+    height: 10px;
+    margin-top: 15px;
     background-color: #f7ba14;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 8px;
-    transition: color 0.3ms;
 }
 
-.btnbtnEnviarR button:hover{
-    color: #fff;
+.parrafo{
+    margin-top: 20px ;
+    font-size: 18px;
+    font-weight: normal;
+    color: #a7a7a7;
 }
 
-#ciudad{
-    margin-top: 10px;
-    width: 55%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-size: 20px;
-    cursor: pointer;
+.valores{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 18px;
 }
+
+/* //footer */
 
 footer{
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -293,7 +262,6 @@ footer{
     cursor: pointer;
     color: #868686;
 }
-
 .politicas{
     text-decoration: none;
     color: #f7ba14;
@@ -305,6 +273,6 @@ footer{
 
 .mapa{
     width: 40%;
-    height: 55%;
+    height: 63%;
     margin-bottom: 5rem;
 }

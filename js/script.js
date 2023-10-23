@@ -30,8 +30,6 @@ registerBtn.addEventListener("click", () => {
     window.location.href = "registro.php"; 
 });
 
-
-
 var mymap = L.map('mapa').setView([4.54050055,  -75.6657981481088], 30);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
