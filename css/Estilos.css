@@ -351,6 +351,7 @@ footer{
 }
 
 .contactos{
+    
     width: 60%;
     height: 100%;
     display: flex;
@@ -359,7 +360,7 @@ footer{
 
 .info-contacto{
     width: 90%;
-    margin: 1%;
+    margin: 5% 1% 1% 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -411,6 +412,10 @@ footer{
 .fa-brands{
     cursor: pointer;
     color: #868686;
+}
+
+.fa-brands:hover{
+    font-size: 35px;
 }
 
 .hr{
